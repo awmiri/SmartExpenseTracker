@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FAF9F6">
+
+    <!-- Main screen content -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:paddingBottom="120dp"
+        android:layout_marginTop="20dp">
+
+        <!--   main header page     -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            >
+            <!--  titles header  -->
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                >
+                <!--  good evening tittle  -->
+                <TextView
+                    android:id="@+id/textGreeting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="GOOD EVENING Amirali   👋"
+                    android:textColor="#777970"
+                    android:textSize="12sp"
+                    android:letterSpacing="0.08"
+                    android:textStyle="bold"
+                    />
+
+                <!--  page tittle  -->
+                <TextView
+                    android:id="@+id/textDashBoardTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Your finances"
+                    android:textColor="#252923"
+                    android:textSize="30sp"
+                    android:textStyle="bold"
+                />
+
+                <!--  page LITTLE tittle  -->
+                <TextView
+                    android:id="@+id/textDashBoardLittleTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="Manage your money with ease."
+                    android:textColor="#A3A49D"
+                    android:textSize="12sp"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <!-- Date title -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:gravity="end"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp">
+
+                <!-- Month -->
+                <TextView
+                    android:id="@+id/textMonth"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="OCT"
+                    android:textSize="11sp"
+                    android:textStyle="bold"
+                    android:textColor="#999A93"
+                    android:letterSpacing="0.12" />
+
+                <!-- Day Nummber -->
+                <TextView
+                    android:id="@+id/textDay"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:textColor="#252923" />
+                <!-- Day Char -->
+                <TextView
+                    android:id="@+id/characterText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="10sp"
+                    android:textStyle="bold"
+                    android:textColor="#999A93"
+                    android:text="TUESDAY"
+                    android:letterSpacing="0.05"
+                    android:gravity="center" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <!--  Account Balance Card  -->
+        <LinearLayout
+            android:id="@+id/balanceCard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:background="@drawable/bg_balance_card"
+            android:orientation="vertical"
+            android:padding="15dp"
+            >
+            <!--  Balance Title  -->
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <ImageView
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_wallet"
+                    android:layout_marginEnd="11dp"
+                    android:contentDescription="Wallet"
+                    app:tint="#E7D8B3"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="Total Balance"
+                    android:textSize="20sp"
+                    android:textColor="#E7D8B3"
+                    android:textStyle="bold"
+                    />
+            </LinearLayout>
+
+            <!--  Divider  -->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="10dp"
+                android:background="#40FFFFFF"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="12,000,000"
+                    android:textStyle="bold"
+                    android:textSize="32sp"
+                    android:textColor="#D0CEC5"
+                    android:layout_marginRight="10sp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:text="R"
+                    android:textStyle="bold"
+                    android:textSize="32sp"
+                    android:textColor="#D0CEC5"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <include
+        layout="@layout/view_bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="25dp"
+        android:layout_height="60dp" />
+
+</FrameLayout>
