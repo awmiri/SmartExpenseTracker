@@ -55,7 +55,7 @@ public class BottomNavigation {
         };
 
         int activeColor = Color.parseColor("#477A61");
-        int inactiveColor = Color.parseColor("#858585");
+        int inactiveColor = Color.parseColor("#ced4da");
 
         for (int i = 0; i < iconIds.length; i++) {
             ImageView icon = activity.findViewById(iconIds[i]);
