@@ -237,6 +237,7 @@
 
                 <!-- Profile link row with Divider -->
                 <LinearLayout
+                    android:id="@+id/rowPersonalInformation"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -285,6 +286,7 @@
 
                 <!-- security link row with Divider -->
                 <LinearLayout
+                    android:id="@+id/rowAccountSecurity"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
@@ -334,6 +336,7 @@
 
                 <!-- about app link row with divider -->
                 <LinearLayout
+                    android:id="@+id/rowAboutApp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"

@@ -1,6 +1,7 @@
 
 package com.example.smartexpensetracker;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -21,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
         TextView textMonth = findViewById(R.id.textMonth);
         TextView textDay = findViewById(R.id.textDay);
         TextView textCharDat = findViewById(R.id.characterText);
+        TextView seeAllTransaction = findViewById(R.id.seeAllTransactions);
 
         Date today = new Date();
 
@@ -42,6 +44,14 @@ public class MainActivity extends AppCompatActivity {
         textCharDat.setText(
                 dayCharFormat.format(today).toUpperCase(Locale.ENGLISH)
         );
+
+        seeAllTransaction.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    MainActivity.this ,
+                    TransactionsActivity.class
+            );
+            startActivity(intent);
+        });
 
         // راه‌اندازی نوار پایین مشترک؛ تب Home فعال است
         new BottomNavigation(this, 2);
