@@ -16,9 +16,9 @@ public class PersonalInformationActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_personal_information);
-        LinearLayout btnBack = findViewById(R.id.btnBack);
+        PersonalHeaderView personalHeader = findViewById(R.id.personalHeader);
 
-        btnBack.setOnClickListener(v -> {
+        personalHeader.setOnBackClickListener(v -> {
             finish();
         });
     }

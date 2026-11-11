@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="PersonalHeaderView">
+
+        <attr name="personalHeaderEyebrow" format="string" />
+        <attr name="personalHeaderTitle" format="string" />
+        <attr name="personalHeaderSubtitle" format="string" />
+
+    </declare-styleable>
+
+</resources>

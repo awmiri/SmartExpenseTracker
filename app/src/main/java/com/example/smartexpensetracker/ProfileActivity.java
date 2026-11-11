@@ -27,6 +27,18 @@ public class ProfileActivity extends AppCompatActivity {
 
         });
 
+        LinearLayout AboutAppInformation = findViewById(R.id.rowAboutApp);
+
+        AboutAppInformation.setOnClickListener(v ->{
+            Intent intent = new Intent(
+                    ProfileActivity.this,
+                    AboutActivity.class
+            );
+
+            startActivity(intent);
+
+        });
+
 
         new BottomNavigation(this, 4);
 
