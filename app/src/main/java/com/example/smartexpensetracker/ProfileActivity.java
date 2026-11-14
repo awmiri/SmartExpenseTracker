@@ -39,6 +39,17 @@ public class ProfileActivity extends AppCompatActivity {
 
         });
 
+        LinearLayout HelpAndSupportBtn = findViewById(R.id.rowHelpAndSupport);
+
+        HelpAndSupportBtn.setOnClickListener(v -> {
+            Intent intent = new Intent(
+                    ProfileActivity.this,
+                    HelpSupportActivity.class
+            );
+
+            startActivity(intent);
+        });
+
 
         new BottomNavigation(this, 4);
 
